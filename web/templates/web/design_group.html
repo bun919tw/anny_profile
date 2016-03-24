@@ -1,0 +1,19 @@
+{% extends 'web/base.html' %}
+
+{% load staticfiles %}
+
+{% block css %}
+  <link href="{% static 'css/index_css/index.css' %}" rel="stylesheet">
+  <link href="{% static 'css/design_group_css/design_group.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block inner %}
+  <div class="left">
+    <ul>
+      <li><div class="brick"></div><a href="/web/#section3">BACK</a></li>
+    </ul>
+  </div>
+  <div class="group-container">
+    <img src="/static/img/design_group/{{ design_group }}.png" oncontextmenu="return false" />
+  </div>
+{% endblock %}

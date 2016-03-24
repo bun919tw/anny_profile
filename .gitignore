@@ -1,0 +1,4 @@
+db.dqlite
+*.pyc
+*.swp
+*.bak
