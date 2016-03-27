@@ -3,35 +3,51 @@ $anny-gray: #979797;
 
 .left {
   position: fixed;
-  width: 25%;
   top: 200px;
   left: 0px;
   background-color: transparent;
   transition: width ease .5s;
+  @media (max-width: 768px) {
+    top: 100px;
+  }
 
   ul {
     list-style: none;
     margin: 0;
-    padding-left: 140px;
+    padding-left: 40%;
+    @media (max-width: 768px) {
+      padding-left: 0px;
+    }
 
     li {
       margin-bottom: 5px;
 
       a {
         text-decoration: none;
-        font-size: 25px;
         color: $anny-pink;
+        font-size: 25px;
         transition:
           color ease .35s,
           border-bottom-color ease .35s;
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
       }
 
       .brick {
         float: left;
+        margin-top: 5px;
         width: 10px;
         height: 25px;
         margin-right: 10px;
-        margin-top: 5px;
+        @media (max-width: 768px) {
+          width: 5px;
+          height: 12px;
+          margin-right: 4px;
+        }
+      }
+
+      .show {
         background-color: $anny-pink;
       }
     }
@@ -41,45 +57,42 @@ $anny-gray: #979797;
 .index-container {
 
   .section1 {
-    position: relative;
+    display: block;
     margin-left: 25%;
-    height: 800px;
 
     .top-pic {
-      width: 800px;
-      height: 800px;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      z-index: -1;
-    }
-
-    .top-cover {
-      width: 85%;
-      position: absolute;
-      top: 75px;
-      right: 25px;
-      z-index: -1;
+      width: 100%;
     }
   }
 
   .section2 {
     display: block;
     margin-left: 25%;
-    height: 800px;
 
     .column-intro {
+      display: inline-block;
       padding-left: 40px;
       padding-top: 100px;
-      float: left;
       width: 60%;
+      @media (max-width: 768px) {
+        display: block;
+        padding-left: 0px;
+        padding-top: 40px;
+        width: 100%;
+      }
 
       h3 {
         color: $anny-pink;
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
       }
 
       .row-intro {
         margin-bottom: 80px;
+        @media (max-width: 768px) {
+          margin-bottom: 20px;
+        }
 
         .intro-content {
           margin: 20px 20px;
@@ -88,41 +101,70 @@ $anny-gray: #979797;
           .org {
             font-weight: bold;
             font-size: 20px;
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
           }
 
           .title {
             font-size: 16px;
+            @media (max-width: 768px) {
+              font-size: 10px;
+            }
           }
         }
       }
     }
 
     .column-contact {
+      display: inline-block;
       padding-top: 120px;
-      float: right;
-      width: 40%;
+      vertical-align: top;
+      @media (max-width: 768px) {
+        display: block;
+        padding-left: 0px;
+        padding-top: 0px;
+        width: 100%;
+      }
 
       h3 {
         color: $anny-pink;
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
       }
 
       .contact-info {
         margin: 12px 0;
         color: $anny-gray;
         font-size: 18px;
+        @media (max-width: 768px) {
+          margin: 8px 0;
+          padding-left: 20px;
+          font-size: 12px;
+        }
       }
 
       .contact-button {
         margin-top: 40px;
+        @media (max-width: 768px) {
+          margin-top: 10px;
+          padding-left: 20px;
+        }
 
         img {
           margin-right: 20px;
+          @media (max-width: 768px) {
+            width: 25px;
+            margin-right: 10px;
+          }
         }
       }
     }
   }
 
   .section3 {
+    display: block;
     margin-left: 25%;
 
     .design-row {
@@ -136,16 +178,25 @@ $anny-gray: #979797;
           margin: 10px 0;
           width: 400px;
           cursor: pointer;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
         }
 
         .name {
           font-size: 20px;
           color: $anny-pink;
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
         }
 
         .desc {
           font-size: 20px;
           color: $anny-gray;
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
         }
       }
     }

@@ -7,17 +7,16 @@
 {% endblock %}
 
 {% block inner %}
-  <div class="left">
+  <div class="left col-md-3">
     <ul>
-      <li><div id="section1_brick"></div><a href="#section1">TOP</a></li>
-      <li><div id="section2_brick"></div><a href="#section2">ABOUT</a></li>
-      <li><div id="section3_brick"></div><a href="#section3">DESIGN</a></li>
+      <li><div class="brick" id="section1_brick"></div><a href="#section1">TOP</a></li>
+      <li><div class="brick" id="section2_brick"></div><a href="#section2">ABOUT</a></li>
+      <li><div class="brick" id="section3_brick"></div><a href="#section3">DESIGN</a></li>
     </ul>
   </div>
   <div class="index-container">
     <div class="section1" id="section1">
       <img src="{% static 'web/img/index_img/top_pic.png' %}" class="top-pic" />
-      <img src="{% static 'web/img/index_img/top_cover.png' %}" class="top-cover" />
     </div>
     <div class="section2" id="section2">
       <div class="column-intro">
@@ -76,7 +75,7 @@
           <div class="desc">2015, UI Design</div>
         </div>
         <div class="design-content">
-          <a href="kemana"><img src="{% static 'web/img/index_img/webcover_kemana.png' %}" />}</a>
+          <a href="kemana"><img src="{% static 'web/img/index_img/webcover_kemana.png' %}" /></a>
           <div class="name">KeMana</div>
           <div class="desc">2015, UI Design</div>
         </div>
