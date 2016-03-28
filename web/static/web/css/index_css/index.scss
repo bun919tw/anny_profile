@@ -1,6 +1,32 @@
 $anny-pink: #e87a90;
 $anny-gray: #979797;
 
+@font-face {
+  font-family: NavBarFont;
+  src: url("/static/web/font/BebasNeue-Regular.otf");
+}
+
+@font-face {
+  font-family: ColumnHeaderFont;
+  src: url("/static/web/font/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: ColumnOrgFont;
+  src: url("/static/web/font/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: ColumnTitleFont;
+  src: url("/static/web/font/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: DesignFont;
+  src: url("/static/web/font/Roboto-Medium.ttf");
+}
+
+
 .left {
   position: fixed;
   top: 200px;
@@ -25,24 +51,28 @@ $anny-gray: #979797;
       a {
         text-decoration: none;
         color: $anny-pink;
-        font-size: 25px;
+        font-size: 24px;
+        font-family: NavBarFont;
+        letter-spacing: 5px;
         transition:
           color ease .35s,
           border-bottom-color ease .35s;
         @media (max-width: 768px) {
-          font-size: 12px;
+          font-size: 16px;
+          letter-spacing: 2px;
         }
       }
 
       .brick {
         float: left;
-        margin-top: 5px;
-        width: 10px;
-        height: 25px;
+        width: 8px;
+        height: 24px;
+        margin-top: 3px;
         margin-right: 10px;
         @media (max-width: 768px) {
           width: 5px;
-          height: 12px;
+          height: 16px;
+          margin-top: 2px;
           margin-right: 4px;
         }
       }
@@ -83,6 +113,7 @@ $anny-gray: #979797;
 
       h3 {
         color: $anny-pink;
+        font-family: ColumnHeaderFont;
         @media (max-width: 768px) {
           font-size: 15px;
         }
@@ -99,8 +130,8 @@ $anny-gray: #979797;
           color: $anny-gray;
 
           .org {
-            font-weight: bold;
             font-size: 20px;
+            font-family: ColumnOrgFont;
             @media (max-width: 768px) {
               font-size: 14px;
             }
@@ -108,6 +139,7 @@ $anny-gray: #979797;
 
           .title {
             font-size: 16px;
+            font-family: ColumnTitleFont;
             @media (max-width: 768px) {
               font-size: 10px;
             }
@@ -118,7 +150,7 @@ $anny-gray: #979797;
 
     .column-contact {
       display: inline-block;
-      padding-top: 120px;
+      padding-top: 100px;
       vertical-align: top;
       @media (max-width: 768px) {
         display: block;
@@ -129,6 +161,7 @@ $anny-gray: #979797;
 
       h3 {
         color: $anny-pink;
+        font-family: ColumnHeaderFont;
         @media (max-width: 768px) {
           font-size: 15px;
         }
@@ -137,11 +170,12 @@ $anny-gray: #979797;
       .contact-info {
         margin: 12px 0;
         color: $anny-gray;
-        font-size: 18px;
+        font-size: 16px;
+        font-family: ColumnTitleFont;
         @media (max-width: 768px) {
           margin: 8px 0;
           padding-left: 20px;
-          font-size: 12px;
+          font-size: 10px;
         }
       }
 
@@ -184,16 +218,18 @@ $anny-gray: #979797;
         }
 
         .name {
-          font-size: 20px;
           color: $anny-pink;
+          font-size: 20px;
+          font-family: DesignFont;
           @media (max-width: 768px) {
             font-size: 14px;
           }
         }
 
         .desc {
-          font-size: 20px;
           color: $anny-gray;
+          font-size: 20px;
+          font-family: DesignFont;
           @media (max-width: 768px) {
             font-size: 14px;
           }
