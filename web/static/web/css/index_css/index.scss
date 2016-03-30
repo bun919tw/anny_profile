@@ -57,6 +57,7 @@ $font-tiny: 10px;
       a {
         text-decoration: none;
         color: $anny-pink;
+        font-weight: 800;
         font-size: $font-large;
         font-family: NavBarFont;
         letter-spacing: 5px;
@@ -119,9 +120,10 @@ $font-tiny: 10px;
 
       h3 {
         color: $anny-pink;
+        font-size: $font-big;
         font-family: ColumnHeaderFont;
         @media (max-width: 768px) {
-          font-size: $font-medium;
+          font-size: $font-small;
         }
       }
 
@@ -167,9 +169,10 @@ $font-tiny: 10px;
 
       h3 {
         color: $anny-pink;
+        font-size: $font-big;
         font-family: ColumnHeaderFont;
         @media (max-width: 768px) {
-          font-size: $font-medium;
+          font-size: $font-small;
         }
       }
 

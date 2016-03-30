@@ -15,5 +15,10 @@
   </div>
   <div class="group-container">
     <img src="/static/web/img/design_group/{{ design_group }}.png" oncontextmenu="return false" />
+    {% if design_group == 'kemana'%}
+      <a href="https://play.google.com/store/apps/details?id=com.chocolabs.app.kemana">Download now</a>
+    {% elif design_group == 'chocotv' %}
+      <a href="https://play.google.com/store/apps/details?id=com.chocolabs.app.chocotv">Download now</a>
+    {% endif %}
   </div>
 {% endblock %}
